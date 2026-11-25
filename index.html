@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>锦格 · 文物织锦意匠图工作站</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="app-header">
+        <div class="brand">
+          <div class="brand-seal">锦</div>
+          <div>
+            <h1>锦格</h1>
+            <p>文物织锦照片 → 经纬拉平 · 循环叠合 · 归色 · 可上机意匠图</p>
+          </div>
+        </div>
+        <nav class="steps" aria-label="制作流程">
+          <button class="step active" data-page="import"><span>1</span>照片导入</button>
+          <button class="step" data-page="straighten"><span>2</span>经纬拉平</button>
+          <button class="step" data-page="repeat"><span>3</span>循环单元</button>
+          <button class="step" data-page="edit"><span>4</span>意匠图修改</button>
+        </nav>
+      </header>
+
+      <main id="main"></main>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

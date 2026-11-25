@@ -1,0 +1,22 @@
+{
+  "name": "silk-pattern-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "文物织锦照片自动意匠图系统：经纬拉平、循环单元、抗污叠合、归色与格子编辑",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "benchmark": "vitest run test/performance.test.ts --reporter=verbose",
+    "acceptance": "vitest run test/acceptance.test.ts --reporter=verbose"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
+  }
+}
